@@ -74,6 +74,7 @@ img {
 
 /* --------------------------------- */
 /* esercizio con screen a max 420px */
+/* voglio che #steps e lezioni occupino il 100% */
 /* -------------------------------------- */
 @media screen and (max-width: 420px){
   body{
@@ -91,32 +92,27 @@ img {
   #steps .row>.right,
   #lezioni .row>.left,
   #lezioni .row>.right{
-  float: none;
   width: 100%;
-  }
-
-  #lezioni .row img{
-    display: inline-block;
   }
 }
 /* --------------------------------- */
 /* esercizio con screen a max 420px */
 /* -------------------------------------- */
 
-
-/* ----------------------------- */
-/*  IPAD >=  IPAD PRO 768px a 1024px */
-/* ---------------------------- */
-@media screen and (min-width 768px) and (max-width: 1024px){
-    body{
+/* ----------------------------------- */
+/* da 421 a 767 px */
+/* ------------------------------- */
+@media screen and (min-width: 421px) and (max-width: 768px){
+  body{
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
   }
 
   .row{
-    min-width: 768px;
-    max-width: 1024px;
+    width: 100%;
+    min-width: 421px;
+    max-width: 768px;
   }
 
   #steps .row>.left,
@@ -126,9 +122,34 @@ img {
   #lezioni .row>.right{
   width: 100%;
   }
-
 }
 
+/* ----------------------------------- */
+/* da 421 a 767 px */
+/* ------------------------------- */
+
+
+/* ----------------------------- */
+/*  IPAD >=  IPAD PRO 768px a 1024px */
+    /* #lezioni #steps voglio che rimangono orginali */
+/* ---------------------------- */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  body{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+  }
+
+  .row{
+    width: 100%;
+    min-width: 768px;
+    max-width: 1024px;
+  }
+
+  #lezioni, #steps{
+  width: 100%;
+  }
+}
 /* ----------------------- */
 /* / IPAD */
 /* ------------------------ */
