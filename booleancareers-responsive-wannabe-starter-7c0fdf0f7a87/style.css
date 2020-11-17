@@ -83,7 +83,7 @@ img {
   }
 
   .row{
-    width: 420px;
+    width: 100%;
   }
 
   #steps .row>.left,
